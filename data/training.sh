@@ -17,6 +17,6 @@ export OMP_NUM_THREADS=$SLURM_CPUS_ON_NODE
 # LOAD MODULES, INSERT CODE, AND RUN YOUR PROGRAMS HERE
 cd /fslhome/alybag/training/bin
 
-/fslhome/alybag/training/bin/a.out > "$OUTFILE"
+/fslhome/alybag/training/bin/output0 > "$OUTFILE"
 
 exit 0

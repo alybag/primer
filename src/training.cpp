@@ -19,7 +19,7 @@ double expliciteuler(int n, double a, double b, double initial, ostream& output)
 	{
 		x = a + i*h; //update value of x to x_i
 		output << x << " " << w << endl; //output x_i and w_i to screen
-		w = w + h*(-3*x); //update w to w_{i+1}
+		w = (1-3*h)*w; //update w to w_{i+1}
 	}
 	output << b << " " << w << endl;
 	return w;
@@ -41,7 +41,7 @@ int main()
 	else cout << "Unable to open file";
 
 	//output to output.dat
-	ofstream myFileStream("output.dat");
+	ofstream myFileStream("output0.dat");
 	expliciteuler(9, 0., 9., 1., myFileStream);
 	myFileStream.close();
 
