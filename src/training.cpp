@@ -41,7 +41,7 @@ int main()
 	else cout << "Unable to open file";
 
 	//output to output.dat
-	ofstream myFileStream("output0.dat");
+	ofstream myFileStream("output.dat");
 	expliciteuler(9, 0., 9., 1., myFileStream);	//change first argument n to match time step
 	myFileStream.close();
 
