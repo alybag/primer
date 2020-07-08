@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -34,6 +36,9 @@ for i in range(len(err)):
     x_ex = x_exact(t)
     err[i] = np.linalg.norm(x-x_ex)
 
+t_beg = 0
+t_end = 9
+
 #Plot Error: 
 plt.rc('font', size=20)
 plt.figure(figsize=(20,15))
@@ -41,10 +46,28 @@ plt.plot(dt, err, 'o', label='Error')
 plt.title('Error')
 plt.xlabel('dt')
 plt.ylabel('error')
-plt.legend(loc='top left')
+plt.legend(loc='upper left')
 plt.show()
+plt.savefig('error.png')
 
-#Plot 1e0
+#Plot 1e-0
+output0 = np.loadtxt('/fslhome/alybag/training/data/output0.dat', delimiter = ' ')
+t0 = output0[:, 0]
+x0 = output0[:, 1]
+
+t_ex = np.linspace(t_beg, t_end, 101)
+x_ex = np.exp((-3)*t_ex)
+
+plt.rc('font', size=20)
+plt.figure(figsize=(20,15))
+plt.plot(t0, x0, 'bo', markersize=5, label='Explicit Euler')
+plt.plot(t_ex, x_ex, 'r-', label='Exact Solution')
+plt.title('Explicit Euler, dt = 1e-0')
+plt.xlabel('t')
+plt.ylabel('x')
+plt.legend(loc='upper right')
+plt.show()
+plt.savefig('1e-0.png')
 
 
 
