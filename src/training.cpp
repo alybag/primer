@@ -29,7 +29,7 @@ int main()
 {
 	//read in params.dat
 	string line;
-	ifstream infile ("params.dat");
+	ifstream infile ("../src/params.dat");
 	if (infile.is_open())
 	{
 		while ( getline (infile,line) )

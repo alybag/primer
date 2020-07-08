@@ -18,9 +18,9 @@ export OMP_NUM_THREADS=$SLURM_CPUS_ON_NODE
 cd /fslhome/alybag/training/bin
 
 /fslhome/alybag/training/bin/output0
-/fslhome/alybag/training/bin/output1
-/fslhome/alybag/training/bin/output2
-/fslhome/alybag/training/bin/output3
-/fslhome/alybag/training/bin/output4
-/fslhome/alybag/training/bin/output5
-/fslhome/alybag/training/bin/output6
+#/fslhome/alybag/training/bin/output1
+#/fslhome/alybag/training/bin/output2
+#/fslhome/alybag/training/bin/output3
+#/fslhome/alybag/training/bin/output4
+#/fslhome/alybag/training/bin/output5
+#/fslhome/alybag/training/bin/output6
