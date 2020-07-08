@@ -42,7 +42,7 @@ int main()
 
 	//output to output.dat
 	ofstream myFileStream("output0.dat");
-	expliciteuler(9, 0., 9., 1., myFileStream);
+	expliciteuler(9, 0., 9., 1., myFileStream);	//change first argument n to match time step
 	myFileStream.close();
 
 	return 0;

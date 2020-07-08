@@ -1,8 +1,3 @@
-#n       #timestep
-9        1e-0
-90       1e-1
-900      1e-2
-9000     1e-3
-90000    1e-4
-900000   1e-5
-9000000  1e-6
+version https://git-lfs.github.com/spec/v1
+oid sha256:702b171ce0d95e47c24347380e39bfba07155d89b2926a21bfd2bf1d8dae1ac5
+size 116
